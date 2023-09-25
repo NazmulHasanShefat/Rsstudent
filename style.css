@@ -1,0 +1,262 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background-color:#866152;
+}
+
+.image-logo{
+    height:35px;
+    width:35px;
+    margin-top:40px;
+    margin-left:40px;
+}
+
+/*this is nav manu*/
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+nav ul li{
+   display:inline-block;
+   margin:25px;
+   margin-top:60px;
+}
+
+nav ul li a{
+    color:#fff;
+    text-decoration:none;
+    font-size:1rem;
+    position:relative;
+}
+
+/*nav manu buttom*/
+.btn{
+   padding:5px;
+   border-radius:10px;
+   background-color:#866152;
+   border:1px solid #fff;
+   color:#fff;
+   padding-left:18px;
+   padding-right:18px;
+   font-size:1rem;
+   margin-top:20px;
+   margin-right:40px;
+   font-weight:bold;
+}
+
+nav ul li a:before{
+    position:absolute;
+    content:'';
+    background-color:#fff;
+    height:3px;
+    width:100%;
+    top:21px;
+    bottom:0;
+    transform:scalex(0);
+    transition:transform .3s linear;
+}
+
+nav ul li a:hover:before{
+    transform:scale(1);
+    transform-origin:left;
+}
+
+.btn:hover{
+    background-color:#fff;
+    color:#866152;
+    transition:.5s;
+}
+/*end of nav manu*/
+
+/*This is description */
+.hero{
+    margin-top:50px;
+    margin-left:70px;
+}
+
+.main-heading{
+    color:#fff;
+    font-family: Adobe Garamond Pro;
+}
+
+.heading2{
+    color:#d3d3d3;
+    font-family: Source Sans Pro;
+}
+
+.dec{
+    color:#fff;
+    font-family:Source Sans Pro;
+    margin-top:8px;
+}
+
+.btn-d{
+    border:1px solid #fff;
+    border-radius:10px;
+    padding:5px 15px 5px 15px;
+    font-size:.9rem;
+    margin-top:20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+   
+}
+span i{
+    margin-left:5px;
+    background-color:#866152;
+    color:#fff;
+    font-size:1rem;
+    padding:3px;
+    border-radius:10px;
+}
+
+.btn-d:hover{
+    background-color:#866152;
+    color:#fff;
+    border:1px solid #fff;
+    transition:.5s;
+
+}
+/*end of description*/
+
+
+/*This is listing option*/
+.listing{
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    flex-wrap:wrap;
+    margin:10px;
+}
+
+
+.list1{
+    height:200px;
+    width:30%;
+    margin-top:50px;
+    color:#d6d6d6;
+    margin-top:80px;
+}
+
+.list2{
+    height:200px;
+    width:30%;
+    margin-top:50px;
+    color:rgb(211, 211, 211);
+   
+}
+.list3{
+    height:170px;
+    width:22%;
+    background-color:#ffffff;
+    margin-top:25px;
+    border-top-left-radius:40px;
+    border-bottom-left-radius:40px;
+    border-bottom-right-radius:40px;
+    transition:border-radius 300ms ease-in-out;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+.paragrap{
+    margin-top:28px;
+    margin-left:20px;
+}
+
+.dec-para{
+    margin-left:20px;
+}
+
+#rd-list{
+   color:#866152;
+}
+
+.list3:hover{
+    border-top-right-radius:40px;
+    border-bottom-left-radius:4px;
+    border-bottom-right-radius:40px;
+
+}
+
+.dec-para:hover{
+    color:#fff;
+}
+
+.heden-nav{
+    display:none;
+}
+
+/*Responsib nav bar*/
+@media(max-width:750px){
+    
+    nav ul li{
+        margin:8px;
+        margin-top:30px;
+      
+    }
+    nav ul li a{
+        font-size:0.5rem;
+
+    }
+     .image-logo{
+        height:18px;
+        width:18px;
+        margin-top: 20px;
+     }
+ 
+    .btn{
+        font-size:0.5rem;
+        margin-top:13px;
+    }
+}
+
+@media(max-width:574px){
+     nav ul li{
+        margin:5px;
+        margin-top:20px;
+     }
+    .heden-nav{
+        display:block;
+        margin-right:30px;
+    }
+    .btn{
+       display:none;
+    }
+
+    .listing{
+        display:flex;
+        flex-direction:column;
+        
+    }
+    .list1{
+        width:80%;
+        margin-left:4px;
+      
+    }
+    .list2{
+        width:80%;
+        margin-left:4px;
+    }
+    .list3{
+        width:80%;
+        margin-left:4px;
+    }
+
+    .hero{
+        margin-left:50px;
+        margin-top:90px;
+    }
+    .dec-para{
+        margin-left:8px;
+    }
+
+    .paragrap{
+        margin-left:8px;
+    }
+
+}
