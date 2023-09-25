@@ -1,0 +1,166 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background-color:#866152;
+}
+
+.image-logo{
+    height:35px;
+    width:35px;
+    margin-top:40px;
+    margin-left:40px;
+}
+
+/*this is nav manu*/
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+nav ul li{
+   display:inline-block;
+   margin:25px;
+   margin-top:60px;
+}
+
+nav ul li a{
+    color:#fff;
+    text-decoration:none;
+    font-size:1rem;
+    position:relative;
+}
+
+/*nav manu buttom*/
+.btn{
+   padding:5px;
+   border-radius:10px;
+   background-color:#866152;
+   border:1px solid #fff;
+   color:#fff;
+   padding-left:18px;
+   padding-right:18px;
+   font-size:1rem;
+   margin-top:20px;
+   margin-right:40px;
+   font-weight:bold;
+}
+
+nav ul li a:before{
+    position:absolute;
+    content:'';
+    background-color:#fff;
+    height:3px;
+    width:100%;
+    top:21px;
+    bottom:0;
+    transform:scalex(0);
+    transition:transform .3s linear;
+}
+
+nav ul li a:hover:before{
+    transform:scale(1);
+    transform-origin:left;
+}
+
+.btn:hover{
+    background-color:#fff;
+    color:#866152;
+    transition:.5s;
+}
+
+/*contuct box*/
+
+.contuct-box{
+    display:grid;
+    grid-template-columns:40% 60%;
+    height:300px;
+}
+
+.box1{
+    display:flex;
+    flex-direction:column;
+    width:60%;
+    height:200px;
+}
+
+.E-add{
+    display:flex;
+    margin-left:80px;
+    color:#fff;
+    margin-top:10px;
+}
+.gmail-id{
+    color:#fffe;
+}
+
+.Em-add{
+    margin-left:80px;
+    font-family:sans-serif;
+    color:#cecece;
+}
+.phone{
+    margin-left:80px;
+    margin-top:10px;
+    color:#fff;
+}
+
+.phone-no{
+    margin-left:80px;
+   color:#cfcece;
+}
+
+
+
+.contuct-heading{
+    color:#fff;
+    font-family:Adobe Garamond Pro;
+    margin-top:130px;
+    margin-left:80px;
+}
+
+.company-name{
+    display:flex;
+    flex-direction:column;
+    
+}
+
+.add{
+    color:#fff;
+    margin-left:80px;
+    font-family:Source Sans Pro;
+    margin-top:10px;
+}
+
+.contuct-h2{
+    margin-top:50px;
+    margin-left:80px;
+    color:#fff;
+}
+
+span i{
+    font-size:1.3rem;
+    margin-left:20px;
+   
+}
+
+/*This is imagebox*/
+
+.box-image{
+    height:400px;
+    width:60%;
+    background-color:#fff;
+    margin-left:270px;
+    margin-top:60px;
+    border-top-left-radius:127px;
+    border-bottom-left-radius:127px;
+    border-bottom-right-radius:127px;
+    background-image:url("a-logo-sign-outside-of-the-headquarters-of-the-national-gypsum-company-F8ANKG.jpg");
+    background-size:100% 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}

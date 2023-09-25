@@ -1,0 +1,172 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background-color:#866152;
+}
+
+.image-logo{
+    height:35px;
+    width:35px;
+    margin-top:40px;
+    margin-left:40px;
+}
+
+/*this is nav manu*/
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+nav ul li{
+   display:inline-block;
+   margin:25px;
+   margin-top:60px;
+}
+
+nav ul li a{
+    color:#fff;
+    text-decoration:none;
+    font-size:1rem;
+    position:relative;
+}
+
+/*nav manu buttom*/
+.btn{
+   padding:5px;
+   border-radius:10px;
+   background-color:#866152;
+   border:1px solid #fff;
+   color:#fff;
+   padding-left:18px;
+   padding-right:18px;
+   font-size:1rem;
+   margin-top:20px;
+   margin-right:40px;
+   font-weight:bold;
+}
+
+nav ul li a:before{
+    position:absolute;
+    content:'';
+    background-color:#fff;
+    height:3px;
+    width:100%;
+    top:21px;
+    bottom:0;
+    transform:scalex(0);
+    transition:transform .3s linear;
+}
+
+nav ul li a:hover:before{
+    transform:scale(1);
+    transform-origin:left;
+}
+
+.btn:hover{
+    background-color:#fff;
+    color:#866152;
+    transition:.5s;
+}
+
+/*This is form group*/
+
+.form-container{
+    display:flex;
+    justify-content:space-between;
+}
+.image-box{
+    height:400px;
+    width:50%;
+    background-color:#fff;
+    margin-left:50px;
+    margin-top:50px;
+    background-image:url("a-logo-sign-outside-of-the-headquarters-of-the-national-gypsum-company-F8ANKG.jpg");
+    background-size:100% 100%;
+}
+.form-box{
+   top:180px;
+   right:150px;
+   position:absolute;
+   width:250px;
+   transition:.5s;
+}
+
+.email{
+    padding:5px 0;
+    margin:5px 0;
+    border-left:0;
+    border-top:0;
+    background-color:#866152;
+    border-bottom:1px solid #ffffff;
+    border-right:0;
+    outline:none;
+    color:#fff;
+}
+
+.pwd{
+    padding:10px 0;
+    margin:5px 0;
+    border-left:0;
+    background-color:#866152;
+    border-top:0;
+    border-bottom:1px solid #ffffff;
+    border-right:0;
+    outline:none;
+    background:transparent;
+    color:#fff;
+}
+
+::-webkit-input-placeholder{
+    color:#ffffffa8;
+}
+
+.btn-f{
+    padding:5px 20px 5px 20px;
+    background-color:#866152;
+    color:#fff;
+    border-radius:10px;
+    margin-top:10px;
+}
+
+.btn-f:hover{
+    background-color:#fff;
+    color:#866152;
+    border:2px solid #866152;
+    transition:.5s;
+}
+
+.form-h{
+    color:#fff;
+}
+
+.register{
+    color:#fff;
+    display:flex;
+    font-size:.9rem;
+    margin-top:4px;
+}
+.register a{
+    color:#fff;
+    font-size:.9rem;
+    margin-left:6px;
+}
+.forget a{
+    color:#fff;
+    font-size:.9rem;
+}
+.forget{
+    margin-top:15px;
+}
+
+.forget a:hover{
+    color:#b3b3b3;
+}
+.register a:hover{
+    color:#bdbdbd;
+}
