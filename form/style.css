@@ -92,7 +92,7 @@ nav ul li a:hover:before{
 .form-box{
    top:180px;
    right:150px;
-   position:absolute;
+  
    width:250px;
    transition:.5s;
 }
@@ -169,4 +169,73 @@ nav ul li a:hover:before{
 }
 .register a:hover{
     color:#bdbdbd;
+}
+
+/* responsibnab */
+
+@media(max-width:574px){
+    nav ul li{
+       margin:5px;
+       margin-top:20px;
+    }
+    nav ul li a{
+       font-size:1rem;
+      
+    }
+   .heden-nav{
+       display:block;
+   }
+   .btn{
+      display:none;
+   }
+
+   .form-container{
+    flex-direction: column;
+}
+
+.image-box{
+    height:180px;
+    width:50%;
+ 
+}
+
+.image-logo{
+    height:18px;
+    width:28px;
+    margin-top: 20px;
+    margin-left:4px;
+ }
+
+
+   }
+
+   @media(max-width:750px){
+    
+    nav ul li{
+        margin:4px;
+        margin-top:15px;
+        }
+    nav ul li a{
+        font-size:.4rem;
+
+    }
+
+    .form-container{
+        flex-direction: column;
+    }
+
+    .image-logo{
+        height:18px;
+        width:19px;
+       
+     }
+
+     .image-box{
+        width:90%;
+        margin-left:0;
+     }
+     .form-container{
+        margin-left:20px;
+     }
+    
 }
