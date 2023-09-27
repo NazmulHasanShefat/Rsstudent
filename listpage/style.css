@@ -188,6 +188,7 @@ nav ul li a:hover:before{
     background-color:rgb(78, 78, 78);
     display:flex;
     justify-content:space-evenly;
+   
 }
 
 .description-1{
@@ -233,7 +234,10 @@ nav ul li a:hover:before{
    }
    .foot-container{
     flex-direction:column;
+   
    }
+
+
 
    .hero1{
     margin-left:0;
@@ -317,9 +321,8 @@ nav ul li a:hover:before{
        .foot-container{
         width:100%;
         height:800px;
+        margin-right:0;
        }
 
-       .description-1{
-        margin-left:20px;
-       }
+      
 }
